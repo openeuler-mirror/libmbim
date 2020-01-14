@@ -1,10 +1,12 @@
 Name:           libmbim
 Version:        1.16.0
-Release:        4
+Release:        5
 Summary:        A glib-based library for talking to WWAN modems and devices
 License:        LGPLv2+
 URL:            http://freedesktop.org/software/libmbim
 Source:         http://freedesktop.org/software/libmbim/%{name}-%{version}.tar.xz
+
+Patch0:  0001-libmbim-add-patch-to-modify-build-err.patch
 
 BuildRequires:  gcc glib2-devel pkgconfig automake autoconf libtool
 BuildRequires:  python2 >= 2.7 pkgconfig(gudev-1.0) >= 147 gtk-doc
@@ -63,5 +65,11 @@ make check
 %{_mandir}/man1/*
 
 %changelog
+* Tue Jan 14 2020 openEuler Buildteam <buildteam@openeuler.org> - 1.16.0-5
+- Type:bugfix
+- ID:NA
+- SUG:NA
+- DESC:add patch to modify build err
+
 * Wed Dec 11 2019 catastrowings <jianghuhao1994@163.com> - 1.16.0-4
 - openEuler init
