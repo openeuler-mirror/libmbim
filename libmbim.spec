@@ -1,6 +1,6 @@
 Name:           libmbim
 Version:        1.24.2
-Release:        1
+Release:        2
 Summary:        A glib-based library for talking to WWAN modems and devices
 License:        LGPLv2+
 URL:            http://freedesktop.org/software/libmbim
@@ -8,7 +8,7 @@ Source:         http://freedesktop.org/software/libmbim/%{name}-%{version}.tar.x
 
 BuildRequires:  gcc glib2-devel pkgconfig automake autoconf libtool
 BuildRequires:  python3 pkgconfig(gudev-1.0) >= 147 gtk-doc
-BuildRequires:  libxslt python-unversioned-command
+BuildRequires:  libxslt python3-unversioned-command
 
 Provides:       %{name}-utils = %{version}-%{release}
 Obsoletes:      %{name}-utils < %{version}-%{release}
@@ -63,6 +63,9 @@ make check
 %{_mandir}/man1/*
 
 %changelog
+* Mon Oct 26 2020 leiju <leiju4@huawei.com> - 1.24.2-2
+- modify BuildRequires from python-unversioned-command to python3-unversioned-command
+
 * Tue Jul 28 2020 cuibaobao <cuibaobao1@huawei.com> - 1.24.2-1
 - update to 1.24.2
 
