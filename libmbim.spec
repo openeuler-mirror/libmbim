@@ -1,6 +1,6 @@
 Name:           libmbim
-Version:        1.24.2
-Release:        2
+Version:        1.26.2
+Release:        1
 Summary:        A glib-based library for talking to WWAN modems and devices
 License:        LGPLv2+
 URL:            http://freedesktop.org/software/libmbim
@@ -63,6 +63,9 @@ make check
 %{_mandir}/man1/*
 
 %changelog
+* Mon Feb 28 2022 YukariChiba <i@0x7f.cc> - 1.26.2-1
+- Upgrade version to 1.26.2
+
 * Mon Oct 26 2020 leiju <leiju4@huawei.com> - 1.24.2-2
 - modify BuildRequires from python-unversioned-command to python3-unversioned-command
 
